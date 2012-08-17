@@ -16,8 +16,6 @@ Create page templates like the ones in your theme folder but through a "DX Templ
 
 **Note: eval() function is used. However, it is available only for admin users to submit code and normally admin users could do a lot harm or upload external harmful plugins as well.**
 
-=== How to use that? ===
-
 A complete demo is available here:
 
 [youtube http://www.youtube.com/watch?v=jtsbXfNi7ts] 
