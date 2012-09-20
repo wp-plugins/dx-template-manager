@@ -5,7 +5,7 @@ Plugin URI: http://devrix.com/template-manager
 Description: Define specific unique templates for your pages from within the admin panel
 Author: nofearinc
 Author URI: http://devwp.eu
-Version: 1.0
+Version: 1.1
 */
 
 include 'dx-template-protector.class.php';
@@ -13,11 +13,11 @@ include 'dx-template-protector.class.php';
 class DX_Template_Manager {
 	public function DX_Template_Manager() {
 		// register custom post type for DX template
-		add_action('init', array( &$this, 'post_type_callback' ));
+		add_action('init', array( &$this, 'post_type_callback' ) );
 		
 		// create a metabox with a dropdown for a template
 		// load a template with the ID if found
-		add_filter('template_include', array($this, 'apply_remote_template'));
+		add_filter('template_include', array($this, 'apply_remote_template') );
 		
 		// add meta box for listing templates
 		add_action( 'add_meta_boxes', array($this, 'meta_boxes_callback') );
@@ -84,7 +84,7 @@ class DX_Template_Manager {
 		// otherwise, proceed with reading the content from a DX template
 		global $wpdb;
 		
-		$content = $wpdb->get_var("SELECT post_content FROM $wpdb->posts WHERE id=". $meta_template_id);
+		$content = $wpdb->get_var($wpdb->prepare( "SELECT post_content FROM $wpdb->posts WHERE id=%d", $meta_template_id ));
 
 		if(is_null($content)) {
 			return $template;

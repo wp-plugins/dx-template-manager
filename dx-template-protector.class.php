@@ -39,14 +39,14 @@ class DX_Template_Protector {
 	
 		add_settings_section(
 			'dxdt_settings_section',         // ID used to identify this section and with which to register options
-			'Enable DX Templates',                  // Title to be displayed on the administration page
+			__('Enable DX Templates', 'dxdt'),                  // Title to be displayed on the administration page
 			array($this, 'dxdt_settings_callback'), // Callback used to render the description of the section
 			'dx-template-options'                           // Page on which to add this section of options
 		);
 	
 		add_settings_field(
 			'dxdt_opt_in',                      // ID used to identify the field throughout the theme
-			'Active: ',                           // The label to the left of the option interface element
+			__('Active: ', 'dxdt'),                           // The label to the left of the option interface element
 			array($this, 'dxdt_opt_in_callback'),   // The name of the function responsible for rendering the option interface
 			'dx-template-options',                          // The page on which this option will be displayed
 			'dxdt_settings_section'         // The name of the section to which this field belongs
