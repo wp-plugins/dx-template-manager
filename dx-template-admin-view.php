@@ -13,5 +13,5 @@
 			<?php do_settings_sections( 'dx-template-options' ) ?>
 			
 			<input type="submit" value="I agree" />
-	</form> <!-- end of #blazemeter-form -->
+	</form> <!-- end of #dxtemplate-form -->
 </div>
