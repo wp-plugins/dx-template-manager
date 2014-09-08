@@ -1,10 +1,10 @@
 === DX Template Manager ===
-Contributors: nofearinc
-Donate link: http://me.peshev.net/
+Contributors: devrix, nofearinc
+Donate link: http://devrix.com/
 Tags: template, php, evaluation, execute
 Requires at least: 3.3.1
-Tested up to: 3.4.2
-Stable tag: 1.1
+Tested up to: 4.0
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,9 @@ Your full HTML as it would be in your page template file. HTML, head and body se
 3. Assigning a dynamic template to a post
 
 == Changelog ==
+
+= 1.2 =
+* Small update and version bump
 
 = 1.1 =
 
